@@ -1,0 +1,235 @@
+body {
+    background: url(../images/rug-h.jpg);
+    background-position: center;
+}
+
+.container {
+    margin-top: 150px;
+    background-image: url(../images/rug-h.jpg);
+
+}
+
+.twoIn1 {
+    width: 100%;
+}
+
+.container3 {
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    perspective: 1000px;
+    background-color: var(--main);
+    flex-direction: column;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all 0.3s ease-in;
+}
+
+.container3:hover .cover {
+    transform: rotateY(-180deg);
+}
+
+.front,
+.back {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+#c1 {
+    background-image: url(..//images/garden1.jpg);
+}
+
+#c2 {
+    background-image: url(..//images/garden1.jpg);
+}
+
+#c3 {
+    background-image: url(..//images/garden2.jpg);
+}
+
+#c4 {
+    background-image: url(..//images/garden2.jpg);
+}
+
+#c5 {
+    background-image: url(..//images/garden3.jpg);
+}
+
+#c6 {
+    background-image: url(..//images/garden3.jpg);
+}
+
+#c7 {
+    background-image: url(..//images/garden4.jpg);
+}
+
+#c8 {
+    background-image: url(..//images/garden4.jpg);
+}
+
+#c9 {
+    background-image: url(..//images/garden5.jpg);
+}
+
+#c10 {
+    background-image: url(..//images/garden5.jpg);
+}
+
+#c11 {
+    background-image: url(..//images/garden6.jpg);
+}
+
+#c12 {
+    background-image: url(..//images/garden6.jpg);
+}
+
+#c13 {
+    background-image: url(..//images/garden7.jpg);
+}
+
+#c14 {
+    background-image: url(..//images/garden7.jpg);
+}
+
+#c15 {
+    background-image: url(..//images/garden8.jpg);
+}
+
+#c16 {
+    background-image: url(..//images/garden8.jpg);
+}
+
+#c17 {
+    background-image: url(..//images/garden9.jpg);
+}
+
+#c18 {
+    background-image: url(..//images/garden9.jpg);
+}
+
+#c19 {
+    background-image: url(..//images/garden10.jpg);
+}
+
+#c20 {
+    background-image: url(..//images/garden10.jpg);
+}
+
+#c21 {
+    background-image: url(..//images/garden11.jpg);
+}
+
+#c22 {
+    background-image: url(..//images/garden11.jpg);
+}
+
+#c23 {
+    background-image: url(..//images/garden12.jpg);
+}
+
+#c24 {
+    background-image: url(..//images/garden12.jpg);
+}
+
+#c25 {
+    background-image: url(..//images/garden13.jpg);
+}
+
+#c26 {
+    background-image: url(..//images/garden13.jpg);
+}
+
+#c27 {
+    background-image: url(..//images/garden14.jpg);
+}
+
+#c28 {
+    background-image: url(..//images/garden14.jpg);
+}
+
+#c29 {
+    background-image: url(..//images/garden15.jpg);
+
+}
+
+#c30 {
+    background-image: url(..//images/garden15.jpg);
+
+}
+
+#c31 {
+    background-image: url(..//images/garden16.jpg);
+
+}
+
+#c32 {
+    background-image: url(..//images/garden16.jpg);
+
+}
+
+#c33 {
+    background-image: url(..//images/garden17.jpg);
+
+}
+
+#c34 {
+    background-image: url(..//images/garden17.jpg);
+
+}
+
+#c35 {
+    background-image: url(..//images/garden18.jpg);
+
+}
+
+#c36 {
+    background-image: url(..//images/garden18.jpg);
+
+}
+
+#c37 {
+    background-image: url(..//images/garden19.jpg);
+
+}
+
+#c38 {
+    background-image: url(..//images/garden19.jpg);
+
+}
+
+#c39 {
+    background-image: url(..//images/garden20.jpg);
+
+}
+
+#c40 {
+    background-image: url(..//images/garden20.jpg);
+
+}

@@ -1,0 +1,434 @@
+@media (min-width:800px) {
+    .sider{
+        display: none;
+    }
+    
+    header .btn-sider {
+        display: none;
+    }
+
+header{
+    width: 100%;
+    padding:  15px 25px ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+}
+header.scroll{
+    background-color: var(--main);
+    box-shadow: 0 0 10px #00000088;
+    padding: 10px 25px;
+}
+
+header img{
+    width: 180px;
+    border-radius: 8px;
+}
+header ul li{
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    font-family: subFont;
+
+}
+header ul{
+    list-style: none;
+    
+}
+header ul a{
+    color: var(--sub2);
+    text-decoration: none;
+    font-size: 18px;
+    z-index:100;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: subFont;
+    margin-right: 5px;
+
+}
+header ul a:hover{
+    color: var(--sub);
+    background-color: var(--sub2);
+}
+header ul li:nth-child(2):hover{
+    color: var(--sub);
+    background-color: var(--sub2);
+    transition: 0.3s;
+    border-radius: 8px;
+}
+header ul i{
+    margin-right: 5px;
+}
+header ul .menu{
+    display: none;
+}
+header ul li:hover .menu{
+    display: grid;
+    position: absolute;
+    background-color: var(--main);
+    padding: 8px;
+    min-width: 130px;
+    gap: 8px;
+    border-radius: 8px;
+}
+header ul li:hover .menu a{
+    border-bottom: 1px solid var(--sub);
+    margin-top: -4px;
+}
+header ul li:hover .menu a:first-child,
+header ul li:hover .menu a:last-child {
+    border: none;
+}
+header input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: var(--main);
+    border-bottom: 2px solid var(--sub2);
+    border-top: 2px solid var(--sub2);
+    color: var(--sub2);
+    font-size: 16px;
+    font-family: subFont;
+    width: 200px;
+}
+header input::placeholder{
+    color: var(--sub);
+    font-size: 18px;
+    font-family: subFont;
+
+}
+footer{
+    min-height: 50vh;
+    background-color: var(--main);
+}
+footer .footerLogo {
+    width: 300px;
+}
+footer .footerLogo img{
+    width: 100%;
+}
+footer li,a{
+    text-decoration: none;
+    color: var(--sub2);
+    font-size: 20px;
+    font-family: subFont;
+    padding: 8px;
+    border-radius: 28px 14px;
+}   
+footer li {
+    position: relative;
+
+}
+footer li:hover{
+    background-color: var(--sub2);
+    color: var(--main);
+    
+}
+footer li::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: var(--sub2);
+    border-radius: 5px;
+    bottom: -7px;
+    right: 50%;
+    transition: linear 0.3s;
+}
+footer li:hover::after {
+    width: 100%;
+    right: 0;
+}
+footer ul{
+    list-style: none;
+}
+footer i{
+    margin-right:3px ;
+}
+
+    
+}
+@media (max-width:800px) {
+    .sider{
+        width: 240px;
+        height: 100vh;
+        background-color: var(--main);
+        padding: 30px 0;
+        position: fixed;
+        top: 0;
+        left: -240px;
+        z-index: 10000;
+        overflow: auto;
+    }
+    .sider.show{
+        left: 0;
+    } 
+    .sider img{
+         width: 100%;
+    }
+    .sider h1{
+        color: var(--sub);
+        text-align: center;
+        margin-bottom:10px;
+    }
+    .sider ul li {
+        list-style: none;
+        padding: 10px;
+        font-family: subFont;
+    }
+    .sider ul li:hover{
+        background-color: var(--sub2);
+        color: var(--sub);
+        margin-left: 12px;
+        border-radius: 10px 0 0 10px;
+    }
+    .sider ul a{
+        color: var(--sub);
+        font-size: 18px;
+        text-decoration: none;    
+    }
+    header .btn-sider {
+        width: 40px;
+        height: 40px;
+        background-color: var(--main);
+        border: 2px solid var(--sub);
+        border-radius: 7px;
+        cursor: pointer;
+        position: relative;
+
+    }
+    header .btn-sider::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 3px;
+        width: 30px;
+        height: 3px;
+        background-color: var(--sub);
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    header .btn-sider::after {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 3px;
+        width: 30px;
+        height: 3px;
+        background-color: var(--sub);
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    header .btn-sider.clicked::before{
+        transform: rotate(-225deg);
+        top: 16px;
+    }
+    header .btn-sider.clicked::after{
+        transform: rotate(225deg);
+        bottom: 16px;
+    }
+    header{
+        width: 100%;
+        padding:  15px 25px ;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+    }
+    header.scroll{
+        background-color: var(--main);
+        box-shadow: 0 0 10px #00000088;
+        padding: 10px 25px;
+    }
+    header nav {
+        display: none;
+    }
+    header input{
+        display: none;
+    }
+    header img{
+        width: 180px;
+        border-radius: 8px;
+    }
+    header ul li{
+        display: inline-block;
+        padding: 8px;
+        position: relative;
+        font-family: subFont;
+        
+    }
+    header ul{
+        list-style: none;
+        
+    }
+    header ul a{
+        color: var(--sub2);
+        text-decoration: none;
+        font-size: 18px;
+        z-index:100;
+        padding: 8px;
+        border-radius: 8px;
+        font-family: subFont;
+    
+    }
+    header ul a:hover{
+        color: var(--sub);
+        background-color: var(--sub2);
+    }
+    header ul i{
+        margin-right: 5px;
+    }
+    header ul .menu{
+        display: none;
+    }
+    header ul li:hover .menu{
+        display: grid;
+        position: absolute;
+        background-color: var(--main);
+        padding: 8px;
+        min-width: 130px;
+        gap: 8px;
+        border-radius: 8px;
+    }
+    header ul li:hover .menu a{
+        border-bottom: 1px solid var(--sub);
+        margin-top: -4px;
+    }
+    header ul li:hover .menu a:first-child,
+    header ul li:hover .menu a:last-child {
+        border: none;
+    }
+    header input {
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background-color: var(--main);
+        border-bottom: 2px solid var(--sub2);
+        border-top: 2px solid var(--sub2);
+        color: var(--sub2);
+        font-size: 16px;
+        font-family: subFont;
+        width: 200px;
+    }
+    header input::placeholder{
+        color: var(--sub);
+        font-size: 18px;
+        font-family: subFont;
+    
+    }
+    footer{
+        min-height: 50vh;
+        background-color: var(--main);
+    }
+    footer .footerLogo {
+        width: 300px;
+    }
+    footer .footerLogo img{
+        width: 100%;
+    }
+    footer li,a{
+        text-decoration: none;
+        color: var(--sub2);
+        font-size: 20px;
+        font-family: subFont;
+        padding: 8px;
+        border-radius: 28px 14px;
+    }   
+    footer li {
+        position: relative;
+    
+    }
+    footer li:hover{
+        background-color: var(--sub2);
+        color: var(--main);
+        
+    }
+    footer li::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: var(--sub2);
+        border-radius: 5px;
+        bottom: -7px;
+        right: 50%;
+        transition: linear 0.3s;
+    }
+    footer li:hover::after {
+        width: 100%;
+        right: 0;
+    }
+    footer ul{
+        list-style: none;
+    }
+    footer i{
+        margin-right:3px ;
+    }
+    
+        
+    
+}
+.fa-solid {
+    margin: 0 3px;
+    transition: none;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+#loading{
+    width: 100%;
+    background-color: var(--sub);
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 1;
+}
+#loading span{
+    width: 20px;
+    height: auto;
+    margin: 10px;
+    background-color: #fff;
+    animation-name: load;
+    animation-duration: calc(var(--i) * 2) ;
+    animation-delay: 0s;
+    animation-timing-function:linear ;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+.loading.hide{
+    animation: hid 1s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes load {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 50px;
+    }
+}
+@keyframes hid {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.fa-spin{
+    font-size: 3em;
+}

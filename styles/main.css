@@ -1,0 +1,300 @@
+@charset "utf8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mainFont;
+    transition: all 0.3s;
+    font-weight: 900;
+
+}
+
+i {
+    transition: none
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: subFont;
+    src: url(Antonio-VariableFont_wght.ttf);
+}
+
+:root {
+    --main: #fff;
+    --sub2: #000;
+    --sub: #2383d7;
+    --sha: #00000088;
+
+}
+
+::selection {
+    background-color: var(--sub2);
+    color: var(--main);
+}
+
+html {
+    direction: ltr;
+    scroll-behavior: smooth;
+}
+
+.f-cen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.f-bet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-ard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.f-evn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.f-col {
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.p8 {
+    padding: 8px;
+}
+
+.p12 {
+    padding: 12px;
+}
+
+.p16 {
+    padding: 16px;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.p24 {
+    padding: 24px;
+}
+
+.p32 {
+    padding: 32px;
+}
+
+.p40 {
+    padding: 40px;
+}
+
+.g8 {
+    gap: 8px;
+}
+
+.g12 {
+    gap: 12px;
+}
+
+.g16 {
+    gap: 16px;
+}
+
+.g20 {
+    gap: 20px;
+}
+
+.g24 {
+    gap: 24px;
+}
+
+.g32 {
+    gap: 32px;
+}
+
+.g40 {
+    gap: 40px;
+}
+
+.r8 {
+    border-radius: 8px;
+}
+
+.r12 {
+    border-radius: 12px;
+}
+
+.r16 {
+    border-radius: 16px;
+}
+
+.r20 {
+    border-radius: 20px;
+}
+
+.r24 {
+    border-radius: 24px;
+}
+
+.r32 {
+    border-radius: 32px;
+}
+
+.r40 {
+    border-radius: 40px;
+}
+
+.r50 {
+    border-radius: 50%;
+}
+
+.bg-w {
+    background-color: #fff;
+}
+
+.bg-b {
+    background-color: #000;
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.bg-sub {
+    background-color: var(--sub);
+}
+
+.bg-sub2 {
+    background-color: var(--sub2);
+}
+
+.txt-w {
+    color: #fff;
+}
+
+.txt-b {
+    color: #000;
+}
+
+.txt-main {
+    color: var(--main);
+}
+
+.txt-sub {
+    color: var(--sub);
+}
+
+.txt-sub2 {
+    color: var(--sub2);
+}
+
+.fo-size18 {
+    font-size: 18px;
+}
+
+.fo-size20 {
+    font-size: 20px;
+}
+
+.fo-size22 {
+    font-size: 22px;
+}
+
+.fo-size24 {
+    font-size: 24px;
+}
+
+.fo-size30 {
+    font-size: 30px;
+}
+
+.fo-size40 {
+    font-size: 40px;
+}
+
+.btn {
+    min-width: 120px;
+    padding: 8px 16px;
+    background-color:var(--main);
+    color:  var(--sub);
+    outline: none;
+    border: 2px solid var(--sub);
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    background-color: var(--sub);
+    color: var(--main);
+    border:2px solid var(--main);
+
+}
+ .btn::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid var(--sub);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+} 
+.btn:hover::after{
+    top: 0;
+    left: 0;
+    border: none;
+    transition: 0.5s;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container2 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.image {
+    width: 350px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.wid100 {
+    width: 100%;
+}
+
+.txt-cen {
+    text-align: center;
+}

@@ -1,0 +1,122 @@
+body {
+    background-image: url(../images/rug-h.jpg)
+}
+.container{
+    padding: 10px;
+}
+#btn-show:hover{
+    cursor: pointer;
+    color: var(--sha);
+}
+
+.signIn{
+    display: none;
+}
+.logIn.show{
+    transition: 3.5s;
+    transform: scale(0);
+}
+.logIn {
+    width: 600px;
+    background-image: url(../images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+.input-field .remmber input{
+    width: auto;
+    padding: 0;
+}
+.input-field .remmber{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.input-field input {
+    padding: 8px;
+    width: 18.75em;
+    border-radius: 8px;
+    font-family: subFont;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: none;
+    border-top: 2px solid var(--main);
+    border-bottom: 2px solid var(--sha);
+    color: var(--sub);
+    box-shadow: 0 0 10px var(--sha);
+
+}
+
+.input-field input:hover {
+    border-bottom: 2px solid var(--sha);
+    box-shadow: 0 0 20px var(--sha);
+}
+
+::placeholder {
+    font-family: subFont;
+    color: var(--sub2);
+}
+
+.signIn.show{
+    width: 37.5em;
+    background: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: right;
+    border-radius: 16px;
+    box-shadow: 0 0 25px var(--sub);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    animation-name: goOut;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes goOut {
+    0% {
+        transform: rotate(0deg);
+        left: 100%;
+        top: 60%;
+    }
+
+    20% {
+        transform: rotate(90deg);
+        left: 80%;
+        top: 50%;
+    }
+
+    40% {
+        transform: rotate(180deg);
+        left: 60%;
+        top: 40%;
+    }
+
+    60% {
+        transform: rotate(270deg);
+        left: 40%;
+        top: 30%;
+    }
+
+    80% {
+        transform: rotate(310deg);
+        left: 30%;
+        top: 20%;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        left: 28%;
+        top: 10%;
+    }
+}

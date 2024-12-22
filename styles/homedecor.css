@@ -1,0 +1,157 @@
+.container3 {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+}
+
+.container3:hover>.card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#c1 {
+    background-image: url(..//images/home1.jpg);
+    background-size: cover;
+}
+
+#c2 {
+    background-image: url(..//images/home2.jpg);
+    background-size: cover;
+}
+
+#c3 {
+    background-image: url(..//images/home3.jpg);
+    background-size: cover;
+}
+
+#c4 {
+    background-image: url(..//images/home4.jpg);
+    background-size: cover;
+}
+
+#c5 {
+    background-image: url(..//images/home5.jpg);
+    background-size: cover;
+}
+
+#c6 {
+    background-image: url(..//images/home6.jpg);
+    background-size: cover;
+}
+
+#c7 {
+    background-image: url(..//images/home7.jpg);
+    background-size: cover;
+}
+
+#c8 {
+    background-image: url(..//images/home8.jpg);
+    background-size: cover;
+}
+
+#c9 {
+    background-image: url(..//images/home10.jpg);
+    background-size: cover;
+}
+
+#c10 {
+    background-image: url(..//images/home11.jpg);
+    background-size: cover;
+}
+
+#c11 {
+    background-image: url(..//images/home12.jpg);
+    background-size: cover;
+}
+
+#c12 {
+    background-image: url(..//images/home13.jpg);
+    background-size: cover;
+}
+
+#c13 {
+    background-image: url(..//images/home15.jpg);
+    background-size: cover;
+}
+
+#c14 {
+    background-image: url(..//images/home16.jpg);
+    background-size: cover;
+}
+
+#c15 {
+    background-image: url(..//images/home17.jpg);
+    background-size: cover;
+}
+
+#c16 {
+    background-image: url(..//images/home18.jpg);
+    background-size: cover;
+}
+
+#c17 {
+    background-image: url(..//images/home19.jpg);
+    background-size: cover;
+}
+
+#c18 {
+    background-image: url(..//images/home20.jpg);
+    background-size: cover;
+}
+
+#c19 {
+    background-image: url(..//images/home21.jpg);
+    background-size: cover;
+}
+
+#c20 {
+    background-image: url(..//images/home22.jpg);
+    background-size: cover;
+}
+
+#c21 {
+    background-image: url(..//images/home23.jpg);
+    background-size: cover;
+}
+
+.back {
+    background-color: var(--sub2);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container {
+    margin-top: 160px;
+}
+
+.back h1 {
+    color: var(--sub);
+    font-size: 40px;
+}
+
+.back p {
+    color: var(--main);
+    font-size: 20px;
+}

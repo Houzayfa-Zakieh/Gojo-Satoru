@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navs.css">
+    <link rel="stylesheet" href="styles/sign.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/5cd3c2f996.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" href="images/logo.jpg">
+    <title>Gojo Satoru - SignIn</title>
+</head>
+
+<body>
+    <div class="container f-cen">
+        <form action="index.html" method="get" id="myForm">
+
+            <div class="signIn">
+                <h1>Make your own accont</h1>
+                <div class="input-field">
+                <span id="firstname-span"></span>
+                    <input type="text" name="firstname" id="firstname" tabindex="1" required autofocus placeholder="First Name">
+                </div>
+
+                <div class="input-field">
+                <span id="lastname-span"></span>
+                    <input type="text" name="lastname" id="lastname" tabindex="2" required placeholder="Last Name">
+                </div>
+
+                <div class="input-field">
+                <span id="phone-span"></span>
+                    <input type="tel" name="phone" id="phone" tabindex="3" required placeholder="Phone Number">
+                </div>
+
+                <div class="input-field">
+                <span id="email-span"></span>
+                    <input type="email" name="email" id="email" tabindex="4" required placeholder="E-mail">
+                </div>
+
+                <div class="input-field">
+                <span id="password-span"></span>
+                    <input type="password" name="password" id="password" tabindex="5" required placeholder="Password">
+                </div>
+
+                <div class="input-field">
+                <span id="confirm-span"></span>
+                    <input type="password" name="confirm" id="confirm" tabindex="6" required placeholder="Confirm Password">
+                </div>
+
+                <button type="submit" class="btn">Sign In</button>
+            </div>
+        </form>
+<form action="index.html" method="get" id="myForm2">
+
+            <div class="logIn f-cen f-col p24 g24">
+
+                <h1>Sign In</h1>
+                <div class="input-field">
+                <span id="email-span2"></span>
+                    <input type="email" name="email2" id="email2" tabindex="1" required autofocus placeholder="E-mail">
+                </div>
+
+                <div class="input-field">
+                <span id="password-span2"></span>
+                    <input type="password" name="password2" id="password2" required tabindex="2" placeholder="Password">
+                </div>
+
+                <div class="input-field">
+                    <div class="remmber g8">
+                        <input type="checkbox" name="remmber" id="remmber" tabindex="3">
+                        <label for="remmber">Remmber Me</label>
+                    </div>  
+                    <div class="input-field ">
+                        <span class="fo-size24 txt-sub" id="btn-show">Don't have an account?</span>
+                        <button type="submit" class="btn">Sign In</button>
+                    </div>
+                </div>
+    </div>
+</form>
+    </div>
+    <div id="loading" class="loading f-cen">
+        <span style="--i: 0s"></span>
+        <span style="--i: 0.5s"></span>
+        <span style="--i: 1s"></span>
+        <span style="--i: 1.5s"></span>
+        <span style="--i: 2s"></span>
+    </div>
+    <script src="scripts/window.js"></script>
+    <script src="scripts/sign.js"></script>
+
+</body>
+
+</html>

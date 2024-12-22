@@ -1,0 +1,168 @@
+body{
+    background-image: url(../images/rug-h.jpg);
+    background-attachment: fixed;
+}
+.container{
+    margin-top: 140px;
+}
+.container3{
+    position: relative;
+}
+.container3 .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: var(--main);
+    border-radius: 40px;
+    box-shadow: 0 20px 25px var(--sha);
+    transition: 0.5s;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.container3 .card:hover{
+    height: 420px ;
+}
+.container3 .card .imgBx{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    background-size: 100%;
+    background-position: center;
+    filter: blur(25px);
+}
+.container3 .card:hover .imgBx{
+    background-size: 110%;
+    filter: blur(0);
+
+}
+
+.container3 .card .imgBx::before{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 80px;
+    border-radius: 40px;
+    background-color: var(--main);
+}
+.container3 .card .imgBx::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 75px 70px 0 40px var(--main);
+}
+.container3 .card .content{
+    position: relative;
+    top: -40px;
+    z-index: 100;
+    padding: 0 30px;
+    transition: 0.5s;
+    height: 100px;
+}
+.container3 .card .content button{
+    margin-top: 50px;
+    width: 75%;
+}
+.container3 .card .content h3{
+    position: relative;
+    font-size: 1.75em;
+    font-family: subFont;
+    color: var(--sub);
+}
+.container3 .card .content h3 span{
+    font-family: subFont;
+    position: absolute;
+    bottom: -25px;
+    font-weight: 400;
+    font-size: 0.65em;
+    opacity: 0.75;
+}
+.container3 .card .content p{
+    position: relative;
+    bottom: -40px;
+    opacity: 0;
+    transition: 0.5s;
+    color: var(--sub2);
+    font-size: 1.1em;
+}
+.container3 .card:hover .content p{
+opacity: 1;
+}
+#c1 {
+    background-image: url(..//images/offer1.jpg);
+}
+
+#c2 {
+    background-image: url(..//images/offer2.jpg);
+}
+
+#c3 {
+    background-image: url(..//images/offer3.jpg);
+}
+
+#c4 {
+    background-image: url(..//images/offer4.jpg);
+}
+
+#c5 {
+    background-image: url(..//images/offer5.jpg);
+}
+
+#c6 {
+    background-image: url(..//images/offer6.jpg);
+}
+
+#c7 {
+    background-image: url(..//images/offer7.jpg);
+}
+
+#c8 {
+    background-image: url(..//images/offer8.jpg);
+}
+
+#c9 {
+    background-image: url(..//images/offer9.jpg);
+}
+
+#c10 {
+    background-image: url(..//images/offer10.jpg);
+}
+
+#c11 {
+    background-image: url(..//images/offer11.jpg);
+}
+
+#c12 {
+    background-image: url(..//images/offer12.jpg);
+
+}
+
+#c13 {
+    background-image: url(..//images/offer13.jpg);
+}
+
+#c14 {
+    background-image: url(..//images/offer14.jpg);
+}
+
+#c15 {
+    background-image: url(..//images/offer15.jpg);
+}
+
+#c16 {
+    background-image: url(..//images/offer16.webp);
+}
+
+#c17 {
+    background-image: url(..//images/offer17.jpg);
+}
+
+#c18 {
+    background-image: url(..//images/offer18.jpg);
+    background-size: cover;
+}
