@@ -255,7 +255,7 @@ html {
     border:2px solid var(--main);
 
 }
- .btn::after{
+ /* .btn::after{
     content: '';
     position: absolute;
     top: 3px;
@@ -270,7 +270,7 @@ html {
     left: 0;
     border: none;
     transition: 0.5s;
-}
+} */
 .container {
     width: 100%;
     min-height: 100vh;
