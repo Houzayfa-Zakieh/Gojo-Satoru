@@ -102,35 +102,6 @@
     background-size: cover;
 }
 
-#c16 {
-    background-image: url(..//images/home18.jpg);
-    background-size: cover;
-}
-
-#c17 {
-    background-image: url(..//images/home19.jpg);
-    background-size: cover;
-}
-
-#c18 {
-    background-image: url(..//images/home20.jpg);
-    background-size: cover;
-}
-
-#c19 {
-    background-image: url(..//images/home21.jpg);
-    background-size: cover;
-}
-
-#c20 {
-    background-image: url(..//images/home22.jpg);
-    background-size: cover;
-}
-
-#c21 {
-    background-image: url(..//images/home23.jpg);
-    background-size: cover;
-}
 
 .back {
     background-color: var(--sub2);

@@ -91,4 +91,6 @@ close.onclick = () => {
     allow.classList.add('hide');
 };
 /////////////////////// allow-cookeis start ////////////////////////////////////
-
+if(localStorage.getItem('firstName')!== null){
+    window.alert("Hello "+localStorage.getItem('firstName'));
+}

@@ -8,10 +8,20 @@ body{
 .container3{
     position: relative;
 }
+@media (min-width:250px) {
+ 
+    .container3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
 .container3 .card{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: var(--main);
     border-radius: 40px;
     box-shadow: 0 20px 25px var(--sha);
@@ -25,7 +35,7 @@ body{
 .container3 .card .imgBx{
     position: relative;
     width: 100%;
-    height: 260px;
+    height: 210px;
     background-size: 100%;
     background-position: center;
     filter: blur(25px);
@@ -93,6 +103,95 @@ body{
 .container3 .card:hover .content p{
 opacity: 1;
 }
+}
+@media (min-width:800px) {
+
+    .container3 .card{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background-color: var(--main);
+        border-radius: 40px;
+        box-shadow: 0 20px 25px var(--sha);
+        transition: 0.5s;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+    .container3 .card:hover{
+        height: 420px ;
+    }
+    .container3 .card .imgBx{
+        position: relative;
+        width: 100%;
+        height: 260px;
+        background-size: 100%;
+        background-position: center;
+        filter: blur(25px);
+    }
+    .container3 .card:hover .imgBx{
+        background-size: 110%;
+        filter: blur(0);
+    
+    }
+    
+    .container3 .card .imgBx::before{
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        width: 100%;
+        height: 80px;
+        border-radius: 40px;
+        background-color: var(--main);
+    }
+    .container3 .card .imgBx::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 40px;
+        width: 80px;
+        height: 80px;
+        background: transparent;
+        border-radius: 50%;
+        box-shadow: 75px 70px 0 40px var(--main);
+    }
+    .container3 .card .content{
+        position: relative;
+        top: -40px;
+        z-index: 100;
+        padding: 0 30px;
+        transition: 0.5s;
+        height: 100px;
+    }
+    .container3 .card .content button{
+        margin-top: 50px;
+        width: 75%;
+    }
+    .container3 .card .content h3{
+        position: relative;
+        font-size: 1.75em;
+        font-family: subFont;
+        color: var(--sub);
+    }
+    .container3 .card .content h3 span{
+        font-family: subFont;
+        position: absolute;
+        bottom: -25px;
+        font-weight: 400;
+        font-size: 0.65em;
+        opacity: 0.75;
+    }
+    .container3 .card .content p{
+        position: relative;
+        bottom: -40px;
+        opacity: 0;
+        transition: 0.5s;
+        color: var(--sub2);
+        font-size: 1.1em;
+    }
+    .container3 .card:hover .content p{
+    opacity: 1;
+    }
+}
 #c1 {
     background-image: url(..//images/offer1.jpg);
 }
@@ -152,17 +251,4 @@ opacity: 1;
 
 #c15 {
     background-image: url(..//images/offer15.jpg);
-}
-
-#c16 {
-    background-image: url(..//images/offer16.webp);
-}
-
-#c17 {
-    background-image: url(..//images/offer17.jpg);
-}
-
-#c18 {
-    background-image: url(..//images/offer18.jpg);
-    background-size: cover;
 }

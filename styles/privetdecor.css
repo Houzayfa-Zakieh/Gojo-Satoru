@@ -212,36 +212,6 @@ input:checked + label .description {
 .card[for="c24"] {
     background-image: url('../images/privet24.jpg');
 }
-.card[for="c25"] {
-    background-image: url('../images/privet25.jpg');
-}
-.card[for="c26"] {
-    background-image: url('../images/privet26.jpg');
-}
-.card[for="c27"] {
-    background-image: url('../images/privet27.jpg');
-}
-.card[for="c28"] {
-    background-image: url('../images/privet28.jpg');
-}
-.card[for="c29"] {
-    background-image: url('../images/privet29.jpg');
-}
-.card[for="c30"] {
-    background-image: url('../images/privet30.jpg');
-}
-.card[for="c31"] {
-    background-image: url('../images/privet31.jpg');
-}
-.card[for="c32"] {
-    background-image: url('../images/privet32.jpg');
-}
-.card[for="c33"] {
-    background-image: url('../images/privet33.jpg');
-}
-.card[for="c34"] {
-    background-image: url('../images/privet34.jpg');
-}
 .card[for="c35"] {
     background-image: url('../images/privet35.jpg');
 }
@@ -277,10 +247,4 @@ input:checked + label .description {
 }
 .card[for="c46"] {
     background-image: url('../images/privet46.jpg');
-}
-.card[for="c47"] {
-    background-image: url('../images/privet47.jpg');
-}
-.card[for="c48"] {
-    background-image: url('../images/privet48.jpg');
 }
