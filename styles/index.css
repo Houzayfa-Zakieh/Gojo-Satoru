@@ -83,11 +83,10 @@
     }
     
     .swiper-slide:nth-child(3) .image {
-        width: 600px;
     }
     
     .swiper-slide:nth-child(3) .image .colors {
-        width: 200px;
+        width: 300px;
         padding: 8px;
     }
     
