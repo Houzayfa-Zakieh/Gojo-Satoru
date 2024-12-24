@@ -8,6 +8,173 @@
 
 }
 
+@media (min-width:250px) {
+    /*********************************************** swiper start  ***********************************************/
+    .container{
+        margin-top: 100px;
+    }
+    .container2{
+        gap: 0;
+    }
+    .swiper {
+        width: 100%;
+    }
+    
+    .container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .swiper-slide {
+        padding: 2em;
+        cursor: grab;
+        min-height: 100vh;
+        width: 100%;
+    
+    }
+    
+    .swiper-slide:active {
+        cursor: grabbing;
+    }
+    
+    .swiper-slide:nth-child(1) {
+        background-image: url(../images/bg1.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    
+    /* .swiper-slide:nth-child(2) {
+        background-image: url(../images/bg2.jpg);
+        background-position: center;
+        background-size: cover;
+    } */
+    
+    .swiper-slide:nth-child(2) {
+        background-image: url(../images/bg8.webp);
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    
+    .swiper-slide:nth-child(2) .vid {
+        width: 350px;
+        margin-top: -150px;
+    }
+    
+    .swiper-slide:nth-child(2) .vid video {
+        width: 100%;
+        background-color: none;
+        border-radius: 16px;
+    }
+    
+    .swiper-slide:nth-child(2) .para p {
+        width: 250px;
+        font-size: 30px;
+    }
+    
+    .swiper-slide:nth-child(3) {
+        background-image: url(../images/bg7.jpeg);
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    
+    .swiper-slide:nth-child(3) .image {
+        width: 600px;
+    }
+    
+    .swiper-slide:nth-child(3) .image .colors {
+        width: 200px;
+        padding: 8px;
+    }
+    
+    .swiper-slide:nth-child(3) .image .colors img {
+        width: 100%;
+        transform: scale(0.8);
+    }
+    
+    .swiper-slide:nth-child(3) .image .colors img:hover {
+        transform: scale(1);
+    }
+    
+    .swiper-slide:nth-child(3) .para2 {
+        width: 250px;
+    }
+    .swiper-slide:nth-child(3) .para2 h1{
+        font-size: 30px;
+    }
+
+    .swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
+    
+    .card {
+        width: 400px;
+        padding: 16px;
+        border-radius: 16px;
+        transform: scale(0.7);
+        box-shadow: 0 0 10px var(--shd);
+        position: relative;
+        overflow: hidden;
+        background-color: var(--main);
+    
+    }
+    
+    .card:nth-child(2) {
+        transform: scale(0.8);
+    }
+    
+    .card::before {
+        content: attr(data-sold);
+        position: absolute;
+        background-color: var(--sub2);
+        padding: 6px;
+        color: var(--main);
+        min-width: 140px;
+        text-align: center;
+        rotate: -45deg;
+        left: -33.5px;
+        top: 25.5px;
+    }
+    
+    .card:hover {
+        transform: scale(0.9);
+    
+        button {
+            transform: scale(0.9);
+        }
+    }
+    
+    .card:nth-child(2):hover {
+        transform: scale(1);
+    
+        button {
+            transform: scale(1);
+        }
+    }
+    
+    .card img {
+        width: 100%;
+        padding: 8px;
+        border-radius: 16px;
+    }
+    
+    .card button {
+        transform: scale(0);
+    }
+    .cards{
+        flex-direction: column;
+    }
+    /*********************************** swiper end  ***********************************************/
+        
+    }
+
+@media (min-width:800px) {
+
 /*********************************** swiper start  ***********************************************/
 .swiper {
     width: 100%;
@@ -152,6 +319,8 @@
 }
 
 /*********************************** swiper end  ***********************************************/
+    
+}
 
 /*********************************** container3 start  ***********************************************/
 .container3 {
