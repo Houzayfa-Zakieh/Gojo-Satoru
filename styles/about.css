@@ -1,9 +1,9 @@
   :root{
-      /*   --primary-color:#425b84;*/
-      --secondary-color:#5c84ca; 
+        --primary-color:#8e9fd5;
+      --secondary-color:#5a5485; 
     --max-width:1100px;
 } 
-header li{
+header li:nth-child(2) {
     color: var(--sub2);
 }
 .container{
@@ -19,7 +19,7 @@ body{
 }
 
 #main-header{
-    background: var(--sub);
+    background: var(--primary-color);
     padding: 3.2rem 0;
 }
 
@@ -87,7 +87,7 @@ width: 25px;
 height: 25px;
 transform: translateX(-10px); 
 border-radius: 50%;
-background: var(--sub);
+background: var(--primary-color);
 transition: all 0.6s ease-in-out;
 }
 
@@ -110,7 +110,7 @@ border-style: solid;
 #timeline ul li:nth-child(odd) div:before {
     left: -15px;
     border-width: 8px 16px 8px 0px;
-    border-color: transparent var(--sub) transparent transparent;
+    border-color: transparent var(--primary-color) transparent transparent;
 }
 
 /* Left side arrows */
@@ -118,7 +118,7 @@ border-style: solid;
     right:-15px;
     transform: rotate(180deg);
     border-width: 8px 16px 8px 0px;
-    border-color: transparent var(--sub) transparent transparent;
+    border-color: transparent var(--primary-color) transparent transparent;
 
 }
 
@@ -229,7 +229,7 @@ input.toggle + label::after {
     content: "";
     width: 2.7em;
     height: 2.7em;
-    background:  linear-gradient(to bottom, #333 ,#2383d7);
+    background:  linear-gradient(to bottom, #333 ,#b1d6f9);
     border-radius: 100%;
     transition: 0.4s;
 }
@@ -240,7 +240,7 @@ background: #333;
 }
 
 .light-mode {
-    background: var(--sub);
+    background: var(--primary-color);
 }
 
 .dark-mode {

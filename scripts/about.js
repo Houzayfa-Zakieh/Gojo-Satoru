@@ -31,7 +31,7 @@ const dots = document.querySelectorAll('#timeline ul li');
 
 if (isChecked) {
   document.body.style.background = '#222';
-  header.style.background = '#111';
+  header.style.background = '#000';
 
   for(let i = 0 ; i < boxes.length ; i++){
     boxes[i].classList.remove("light-mode");
@@ -41,8 +41,8 @@ if (isChecked) {
   }
 }
 else {
-  document.body.style.background = '#5b7bb4';
-  header.style.background = '#2383d7';
+  document.body.style.background = '#5a5485';
+  header.style.background = '#8e9fd5';
 
   for(let i = 0 ; i < boxes.length ; i++){
     boxes[i].classList.add("light-mode");
@@ -52,6 +52,3 @@ else {
     }
 }
 }
-
-
-

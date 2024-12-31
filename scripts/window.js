@@ -28,4 +28,4 @@ btnSider.onclick = () => {
 setTimeout(function () {
     document.getElementById('loading').classList.add('hide');
 }
-    , 3000)
+    , 1000)

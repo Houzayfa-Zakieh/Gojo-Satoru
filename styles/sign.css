@@ -5,24 +5,74 @@ body {
 .container {
     padding: 10px;
 }
-@media (min-width:250px) {
+@media (max-width:800px) {
     #btn-show:hover {
         cursor: pointer;
         color: var(--sha);
     }
-
+    .signIn #go-back {
+        position: absolute;
+        background: none;
+        border: none;
+        width: 100px;
+        height: 30px;
+        color: var(--sub2);
+        cursor: pointer;
+        left: 2%;
+        bottom: 4%;
+        font-size: 20px;
+        box-shadow: 0px 0 30px var(--sha);
+        padding: 2px;
+        outline: none;
+        border-radius: 8px;
+        filter: drop-shadow(0 0 20px var(--sha));
+    }
     .signIn {
-        display: none;
         z-index: 22;
+        position: relative;
+        background: url(../images/bg1.jpg);
+        background-size: cover;
+        background-position: right;
+        border-radius: 16px;
+        box-shadow: 0 0 25px var(--sub);
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        transform: scale(0);
+        width: 22em;
+    }
+    .signIn::before{
+        content: attr(data-back);
+        position: absolute;
+        background-color: transparent;
+        width: 100px;
+        height: 30px;
+        color: var(--sub2);
+        cursor: pointer;
+        left: 4%;
+        top: 5%;
+        font-size: 20px;
+        filter: drop-shadow(0 0 15px var(--sha) );
     }
 
     .logIn.show {
-        transition: 3.5s;
         transform: scale(0);
+        transition: 2s;
     }
 
+    .logIn.back{
+        transition: 2s;
+        transform: scale(1);
+        z-index: 11111;
+    }
     .logIn {
-        width: 350px;
+        width: 150px;
         background-image: url(../images/bg2.jpg);
         background-position: center;
         background-size: cover;
@@ -42,7 +92,7 @@ body {
 
     .input-field input {
         padding: 8px;
-        width: 14.75em;
+        width: 14em;
         border-radius: 8px;
         font-family: subFont;
         font-size: 18px;
@@ -53,12 +103,14 @@ body {
         border-bottom: 2px solid var(--sha);
         color: var(--sub);
         box-shadow: 0 0 10px var(--sha);
+        filter: drop-shadow(0 0 10px var(--sha));
 
     }
 
     .input-field input:hover {
         border-bottom: 2px solid var(--sha);
         box-shadow: 0 0 20px var(--sha);
+
     }
 
     ::placeholder {
@@ -67,28 +119,51 @@ body {
     }
 
     .signIn.show {
-        width: 22.75em;
-        background: url(../images/bg1.jpg);
-        background-size: cover;
-        background-position: right;
-        border-radius: 16px;
-        box-shadow: 0 0 25px var(--sub);
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        transform: scale(1);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 16px;
-        padding: 16px;
         animation-name: goOut;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        animation-duration: 5s;
+        animation-duration: 2s;
         animation-delay: 0s;
         animation-direction: normal;
         animation-iteration-count: 1;
+        position: fixed;
+        left: 50%;
+        top: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
+    
+    .signIn.back{
+        display: flex;
+        animation-name: goBack;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+        
+    }
+    
+    @keyframes goBack {
+        0% {
+            transform: rotate(0deg);
+            left: 9%;
+            top: 24%;
+        }
+
+
+        50% {
+            transform: rotate(270deg);
+            left: 40%;
+            top: 30%;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            left: 100%;
+            top: 60%;
+        }
     }
 
     @keyframes goOut {
@@ -98,28 +173,10 @@ body {
             top: 60%;
         }
 
-        20% {
-            transform: rotate(90deg);
-            left: 90%;
-            top: 50%;
-        }
-
-        40% {
-            transform: rotate(180deg);
-            left: 6%;
-            top: 40%;
-        }
-
-        60% {
+        50% {
             transform: rotate(270deg);
             left: 40%;
             top: 30%;
-        }
-
-        80% {
-            transform: rotate(310deg);
-            left: 30%;
-            top: 20%;
         }
 
         100% {
@@ -137,12 +194,81 @@ body {
         color: var(--sha);
     }
 
+    .signIn.back{
+        display: flex;
+
+        animation-name: goBack;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+        
+    }
+    
+    @keyframes goBack {
+        0% {
+            transform: rotate(0deg);
+            
+            left: 28%;
+            top: 10%;
+        }
+
+
+        50% {
+            transform: rotate(270deg);
+            left: 40%;
+            top: 30%;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            left: 100%;
+            top: 60%;
+        }
+    }
     .signIn {
-        display: none;
+        z-index: 22;
+        position: relative;
+        width: 37.5em;
+        background: url(../images/bg1.jpg);
+        background-size: cover;
+        background-position: right;
+        border-radius: 16px;
+        box-shadow: 0 0 25px var(--sub);
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        transform: scale(0);
+    }
+    .signIn #go-back {
+        position: absolute;
+        background: none;
+        border: none;
+        width: 100px;
+        height: 30px;
+        color: var(--sub2);
+        cursor: pointer;
+        left: 5%;
+        top: 7%;
+        font-size: 20px;
+        box-shadow: 0px 0 30px var(--sha);
+        padding: 2px;
+        outline: none;
+        border-radius: 8px;
+        filter: drop-shadow(0 0 20px var(--sha));
+    }
+    
     }
 
     .logIn.show {
-        transition: 3.5s;
+        transition: 2s;
         transform: scale(0);
     }
 
@@ -152,6 +278,12 @@ body {
         background-position: center;
         background-size: cover;
         border-radius: 16px;
+    } 
+    
+    .logIn.back{
+        transition: 2s;
+        transform: scale(1);
+        z-index: 11111;
     }
 
     .input-field .remmber input {
@@ -178,6 +310,8 @@ body {
         border-bottom: 2px solid var(--sha);
         color: var(--sub);
         box-shadow: 0 0 10px var(--sha);
+        filter: drop-shadow(0 0 10px var(--sha));
+
 
     }
 
@@ -192,28 +326,18 @@ body {
     }
 
     .signIn.show {
-        width: 37.5em;
-        background: url(../images/bg1.jpg);
-        background-size: cover;
-        background-position: right;
-        border-radius: 16px;
-        box-shadow: 0 0 25px var(--sub);
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        transform: scale(1);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 16px;
-        padding: 16px;
         animation-name: goOut;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        animation-duration: 5s;
+        animation-duration: 2s;
         animation-delay: 0s;
         animation-direction: normal;
         animation-iteration-count: 1;
+        position: fixed;
+        left: 50%;
+        top: 50%; 
+        transform: translate(-50%, -50%);
     }
 
     @keyframes goOut {
@@ -223,28 +347,11 @@ body {
             top: 60%;
         }
 
-        20% {
-            transform: rotate(90deg);
-            left: 80%;
-            top: 50%;
-        }
 
-        40% {
-            transform: rotate(180deg);
-            left: 60%;
-            top: 40%;
-        }
-
-        60% {
+        50% {
             transform: rotate(270deg);
             left: 40%;
             top: 30%;
-        }
-
-        80% {
-            transform: rotate(310deg);
-            left: 30%;
-            top: 20%;
         }
 
         100% {
@@ -253,4 +360,3 @@ body {
             top: 10%;
         }
     }
-}

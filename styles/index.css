@@ -8,7 +8,7 @@
 
 }
 
-@media (min-width:250px) {
+@media (max-width:800px) {
     /*********************************************** swiper start  ***********************************************/
     .container{
         margin-top: 100px;
@@ -81,12 +81,9 @@
         background-size: cover;
         min-height: 100vh;
     }
-    
-    .swiper-slide:nth-child(3) .image {
-    }
-    
+
     .swiper-slide:nth-child(3) .image .colors {
-        width: 300px;
+        width: 00px;
         padding: 8px;
     }
     

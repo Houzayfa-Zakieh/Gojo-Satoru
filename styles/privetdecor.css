@@ -15,7 +15,7 @@
 .container3 {
     height: 400px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: start;
 }
 

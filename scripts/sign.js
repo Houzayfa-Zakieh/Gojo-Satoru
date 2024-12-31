@@ -1,9 +1,3 @@
-const show = document.getElementById('btn-show');
-
-show.onclick= ()=>{
-    document.querySelector('.logIn').classList.add('show');
-    document.querySelector('.signIn').classList.add('show');
-}
 //////////////////////////////////////////////////////////////////////
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@%^&*]).{8,}$/;
@@ -20,34 +14,34 @@ const password2 = document.getElementById('password2');
 const confirm = document.getElementById('confirm');
 
 
-const validation2= (event2) =>{
+const validation2 = (event2) => {
     var passwordValue2 = password2.value.trim();
     var emailValue2 = email2.value.trim();
     document.getElementById('email-span2').textContent = "";
     document.getElementById('password-span2').textContent = "";
 
 
-    
-    if(!emailRegex.test(emailValue2)){
+
+    if (!emailRegex.test(emailValue2)) {
         email.focus();
         document.getElementById('email-span2').textContent = "Check your E-mail again "
         document.getElementById('email-span2').style.color = "red";
         event2.preventDefault();
         return false;
-        
+
     }
-    if(!passwordRegex.test(passwordValue2)){
+    if (!passwordRegex.test(passwordValue2)) {
         password.focus();
         document.getElementById('password-span2').textContent = "Password is not correct "
         document.getElementById('password-span2').style.color = "red";
         event2.preventDefault();
         return false;
- 
+
     }
     return true;
 
 }
-form2.onsubmit= validation2;
+form2.onsubmit = validation2;
 
 
 const validation = (event) => {
@@ -64,7 +58,7 @@ const validation = (event) => {
     document.getElementById('email-span').textContent = "";
     document.getElementById('password-span').textContent = "";
     document.getElementById('confirm-span').textContent = "";
-    
+
 
     if (firstnameValue.length < 3) {
         firstname.focus();
@@ -90,31 +84,31 @@ const validation = (event) => {
         return false;
     }
 
-    if(!emailRegex.test(emailValue)){
+    if (!emailRegex.test(emailValue)) {
         email.focus();
         document.getElementById('email-span').textContent = "Check your E-mail again "
         document.getElementById('email-span').style.color = "red";
         event.preventDefault();
         return false;
-        
+
     }
-    if(!passwordRegex.test(passwordValue)){
+    if (!passwordRegex.test(passwordValue)) {
         password.focus();
         document.getElementById('password-span').textContent = "Password is not strong "
         document.getElementById('password-span').style.color = "red";
         event.preventDefault();
         return false;
-        
+
     }
-    if(confirmValue != passwordValue){
+    if (confirmValue != passwordValue) {
         confirm.focus();
         document.getElementById('confirm-span').textContent = "Check your password again "
         document.getElementById('confirm-span').style.color = "red";
         event.preventDefault();
         return false;
-        
+
     }
-    localStorage.setItem('firstName',firstnameValue);
+    localStorage.setItem('firstName', firstnameValue);
 
     return true;
 }
@@ -123,5 +117,27 @@ form.onsubmit = validation;
 setTimeout(function () {
     document.getElementById('loading').classList.add('hide');
 }
-    , 3000)
+, 1000)
+
+const show = document.getElementById('btn-show');
+
+show.onclick = () => {
+    document.querySelector('.logIn').classList.add('show');
+    document.querySelector('.logIn').classList.remove('back');
+    document.querySelector('.signIn').classList.add('show');
+    document.querySelector('.signIn').classList.remove('back');
+    
+}
+
+const goBack = document.getElementById('go-back');
+
+goBack.onclick = () => {
+    // document.querySelector('.signIn').classList.replace('show' , 'back');
+    document.querySelector('.signIn').classList.add('back');
+    document.querySelector('.signIn').classList.remove('show');
+    // document.querySelector('.logIn').classList.replace('show' , 'back');
+    document.querySelector('.logIn').classList.add('back');
+    document.querySelector('.logIn').classList.remove('show');
+
+};
 
